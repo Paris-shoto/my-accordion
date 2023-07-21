@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion {
+    max-width: 100%; /* La boîte s'adaptera à la largeur du site */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.accordion-question {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px; /* Taille de police plus grande pour les questions */
+    background-color: #383f47;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-answer {
+    padding: 15px;
+    display: none;
+    font-size: 16px; /* Taille de police plus grande pour les réponses */
+    background-color: #d9d9d9;
+    color: black;
+}
+
+/* Style pour afficher la réponse lorsqu'une question est active */
+.accordion-item.active .accordion-answer {
+    display: block;
+}
